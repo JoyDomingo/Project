@@ -13,3 +13,8 @@ C:\Users\joydo\Desktop\CIS3342\CIS3342\Utilities\bin\Debug\Utilities.pdb
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Utilities\obj\Debug\Utilities.dll
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Utilities\obj\Debug\Utilities.pdb
+G:\New folder\CIS3342\Utilities\bin\Debug\Utilities.dll
+G:\New folder\CIS3342\Utilities\bin\Debug\Utilities.pdb
+G:\New folder\CIS3342\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+G:\New folder\CIS3342\Utilities\obj\Debug\Utilities.dll
+G:\New folder\CIS3342\Utilities\obj\Debug\Utilities.pdb

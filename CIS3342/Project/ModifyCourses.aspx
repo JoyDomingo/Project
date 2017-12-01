@@ -13,7 +13,7 @@
     </div>
 
         <div>
-            <asp:GridView ID="gvCourses" runat="server" AutoGenerateColumns="False" OnRowEditing="gvCourses_RowEditing" OnRowUpdating="gvCourses_RowUpdating" >
+            <asp:GridView ID="gvCourses" runat="server" AutoGenerateColumns="False" OnRowUpdating="gvCourses_RowUpdating" >
                 <Columns>
                     <asp:TemplateField HeaderText="Course ID">
                         <ItemTemplate>
@@ -52,12 +52,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:Button ID="btnEditCourse" runat="server" ShowEditButton="True" HeaderText ="Edit Course" />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <ItemTemplate>
-                            <asp:Button ID="btnDeleteCourse" runat="server" ShowSelectedButton="True" HeaderText="Delete Course"/>
+                            <asp:Button ID="btnEditCourse" runat="server"  CommandName="Update" HeaderText ="Edit Course" Text="Edit" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

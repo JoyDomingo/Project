@@ -68,3 +68,38 @@ C:\Users\joydo\Desktop\CIS3342\CIS3342\Project\bin\Microsoft.CodeDom.Providers.D
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Project\obj\Debug\Project.dll
 C:\Users\joydo\Desktop\CIS3342\CIS3342\Project\obj\Debug\Project.pdb
+G:\New folder\CIS3342\Project\bin\ApplicationInsights.config
+G:\New folder\CIS3342\Project\bin\roslyn\csc.exe
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\New folder\CIS3342\Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\New folder\CIS3342\Project\bin\roslyn\System.Collections.Immutable.dll
+G:\New folder\CIS3342\Project\bin\roslyn\System.Reflection.Metadata.dll
+G:\New folder\CIS3342\Project\bin\roslyn\vbc.exe
+G:\New folder\CIS3342\Project\bin\roslyn\VBCSCompiler.exe
+G:\New folder\CIS3342\Project\bin\roslyn\VBCSCompiler.exe.config
+G:\New folder\CIS3342\Project\bin\Project.dll.config
+G:\New folder\CIS3342\Project\bin\Project.dll
+G:\New folder\CIS3342\Project\bin\Project.pdb
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.Agent.Intercept.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.DependencyCollector.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.Web.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.WindowsServer.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.ApplicationInsights.dll
+G:\New folder\CIS3342\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\New folder\CIS3342\Project\bin\Utilities.dll
+G:\New folder\CIS3342\Project\bin\Utilities.pdb
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.DependencyCollector.xml
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.Web.xml
+G:\New folder\CIS3342\Project\bin\Microsoft.AI.WindowsServer.xml
+G:\New folder\CIS3342\Project\bin\Microsoft.ApplicationInsights.xml
+G:\New folder\CIS3342\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\New folder\CIS3342\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+G:\New folder\CIS3342\Project\obj\Debug\Project.dll
+G:\New folder\CIS3342\Project\obj\Debug\Project.pdb

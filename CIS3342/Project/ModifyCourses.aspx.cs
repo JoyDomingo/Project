@@ -15,23 +15,21 @@ namespace Project
         {
             string id = Request.QueryString["id"];
             int profID = int.Parse(id);
-            gvCourses.DataSource = pxy.ProfessorCourses(profID);
-            gvCourses.DataBind();
-        }
-
-        protected void gvCourses_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            string id = Request.QueryString["id"];
-            int profID = int.Parse(id);
-
-            gvCourses.EditIndex = e.NewEditIndex;
 
             gvCourses.DataSource = pxy.ProfessorCourses(profID);
             gvCourses.DataBind();
+            if (IsPostBack)
+            {
+                gvCourses.DataSource = pxy.ProfessorCourses(profID);
+                gvCourses.DataBind();
+            }
         }
 
         protected void gvCourses_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+            string reqID = Request.QueryString["id"];
+            int profID = int.Parse(reqID);
+
             int rowIndex = e.RowIndex;
             Label label;
             TextBox txtbox;
@@ -54,8 +52,14 @@ namespace Project
             txtbox = (TextBox)gvCourses.Rows[rowIndex].FindControl("txtCourseDay");
             string day = txtbox.Text;
 
+            txtbox = (TextBox)gvCourses.Rows[rowIndex].FindControl("txtCourseHours");
+            string hours = txtbox.Text;
+
             pxy.UpdateCourses(id, courseName, description, credit);
-            
+            pxy.UpdateSection(id, number, day, hours);
+
+            gvCourses.DataSource = pxy.ProfessorCourses(profID);
+            gvCourses.DataBind();
         }
     }
 }
