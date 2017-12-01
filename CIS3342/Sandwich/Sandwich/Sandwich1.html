@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        #Select1 {
+            width: 123px;
+        }
+        #SlcSize {
+            width: 202px;
+        }
+        #Toasted {
+            width: 52px;
+        }
+    </style>
+</head>
+<body style = background-color:"blue">
+    <FORM  id=frmSandwichBuilder"  method="post"  action="Sandwich2.aspx" >
+    <p>
+        Please select one of the buttons
+    </p>
+        <p>
+            Enter Your Name:  <input id="Text1" type="text" /></p>
+    <p>
+        Enter Your Phone Number:
+        <input id="Text2" type="text" /></p>
+        <p>
+            Now Let&#39;s Build a Sandwich!</p>
+        <div style="height: 71px">
+            <p>
+            How big do you want your sandwich?
+
+        </p>
+        <p>
+            <select id="SlcSize" name="size">
+                <option>Small (4" - $5.00)</option>
+                <option>Medium(6" - $8.00)</option>
+                <option>Large(12" - $10.00)</option>
+            </select></p>
+        </div>
+        <div style="height: 138px">
+        
+            What Type Of Bread Would You Like?<br />
+                <select id="SlcBread" name="Bread">
+                    <option>Wheat</option>
+                    <option>Italian</option>
+                </select><br />
+            <br />
+            Would you like it Toasted?<br />
+            <br />
+            <select id="Toasted" name="Toasted">
+                <option>Yes</option>
+                <option>No</option>
+            </select></div>
+        <div style="height: 160px">            
+            What kind of meat?<br />
+            <input id="CkbTurkey" name="Meat" type="radio" value ="Turkey"/>Turkey<br />
+            <input id="CkbRoastBeef" name ="Meat" type="radio" value ="Roast Beef"/>Roast Beef<br />
+            <input id="CkbHam" name ="Meat" type="radio" value ="Ham" />Ham<br />
+            <input id="CkbBacon" name ="Meat" type="radio" value ="Bacon" />Bacon (+ $1.00)<br />
+            <input id="CkbPastrami" name ="Meat" type="radio" value ="Pastrami"/>Pastrami (+$1.00)<br />
+            <input id="CkbSalami" name ="Meat" type="radio" value ="Salami"/>Salami ($1.00)<br />
+        </div>
+        <div style="height: 140px">
+            What kind of Cheese?<br />
+            <input id="CkbAmerican" name ="Cheese" type="radio" value ="American"/>American<br />
+            <input id="CkbSwiss" name ="Cheese" type ="radio" value ="Swiss"/>Swiss<br />
+            <input id="CkbProvolone" name="Cheese" type="radio" value ="Provolone"/>Provolone<br />
+            <input id="CkbMozzarella" name ="Cheese" type="radio" value ="Mozzarella"/>Mozzarella<br />
+            <input id="CkbPepperjack" name ="Cheese" type="radio" value ="Pepperjack"/>Pepperjack (+ $0.50)<br />
+        </div>
+        <div style="height: 160px">
+            What Toppings do you want?<br />
+            <input id="RadioLettuce" name ="Veggie" type="checkbox" value ="Lettuce"/>Lettuce<br />
+            <input id="RadioTomato" name ="Veggie" type="checkbox" value ="Tomato"/>Tomato<br />
+            <input id="RadioOnion" name ="Veggie" type="checkbox" value ="Onion" />Onion<br />
+            <input id="RadioPickles" name ="Veggie" type="checkbox" value ="Pickles"/>Pickles<br />
+            <input id="RadioBellPeppers" name ="Veggie" type="checkbox" value ="Bell Peppers"/>Bell Peppers<br />
+            <input id="RadioSpinach" name ="Veggie" type="checkbox" value ="Spinach"/>Spinach<br />
+        </div>
+        <div style="height: 176px">
+            What kind of sauces do you want?<br />
+            <input id="RadioMayo" name ="Sauce" type="checkbox" value ="Mayo"/>Mayo<br />
+            <input id="RadioKetchup" name="Sauce" type="checkbox" value="Ketchup"/>Ketchup<br />
+            <input id="RadioMustard" name ="Sauce" type="checkbox" value ="Mustard"/>Mustard<br />
+            <input id="RadioChipotle" name ="Sauce" type="checkbox" value ="Chipotle"/>Chipotle<br />
+            <input id="RadioRanch" name ="Sauce" type="checkbox" value ="Ranch"/>Ranch<br />
+            <input id="RadioSriracha" name ="Sauce" type="checkbox" value ="Sriracha"/>Sriracha<br />
+            <input id="RadioBarbeque" name ="Sauce" type="checkbox" value ="Barbeque"/>Barbeque</div>
+        <div style="height: 134px">
+            Extras ($0.50 each)<br />
+            <input id="RadioAvocado" name ="Extra" type="checkbox" value ="Avocado"/>Avocado<br />
+            <input id="RadioExtraMeat" name ="Extra" type="checkbox" value ="ExtraMeat"/>Extra Meat<br />
+            <input id="RadioExtraCheese" name ="Extra" type="checkbox" value ="ExtraCheese"/>Extra Cheese<br />
+            <input id="RadioExtraSauce" name ="Extra" type="checkbox" value ="ExtraSauce"/>Extra Sauce<br />
+            <input id="RadioGuacomole" name ="Extra" type="checkbox" value ="Guacamole"/>Guacamole<br />
+        </div>
+        <div>
+            Did you want to make that a meal for an additional $5.00?<br />
+            <input id="RadioYes" name ="Meal" type="radio" Value ="Yes"/>Yes<br />
+            <input id="RadioNo" name ="Meal" type="radio" Value ="No"/>No <div>
+                Thank you for Ordering at (Name of place)!
+                <br />
+                <br />
+                Leave your Sandwich Builder a Tip! <input id="Text3" name ="Tip" type="text" /></div>
+        </div>    
+        <p>
+        <input id="Submit1" type="submit" value="submit" /></p>
+    </form>
+
+</body>
+</html>

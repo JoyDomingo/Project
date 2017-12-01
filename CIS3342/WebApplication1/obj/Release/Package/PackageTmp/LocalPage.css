@@ -1,0 +1,57 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+
+.title{
+    font-size:60px;
+}
+
+#lblSignIn{    
+    text-align:center;
+    left:50%;
+    right:auto;
+}
+
+#gvMainPage{
+    margin-left:30%;
+    margin-right:auto;
+}
+
+#Representative{
+    width: 50%;
+}
+
+#lblTitle{
+    margin-left:30%;
+    margin-right:auto;
+}
+
+#btnNewUser{
+    margin-right:20px;
+    margin-left:20px;
+}
+
+#btnCreate{
+    margin-left:50%;
+}
+
+#lblFirstName{
+    margin-left:35%;
+}
+#lblLastName{
+    margin-left:35%;
+}
+#lblUserName{
+    margin-left:35%;
+}
+#lblUserType{
+    margin-left:30%;
+}
+
+#lblnewUser{
+    font-size:x-large;
+    margin-left:42%;
+    margin-top:20px;
+    margin-bottom:20px;
+}

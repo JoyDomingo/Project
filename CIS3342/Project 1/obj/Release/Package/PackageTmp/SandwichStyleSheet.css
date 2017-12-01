@@ -1,0 +1,9 @@
+﻿
+img{
+    height: 242px;
+    width:100%;
+    left: 2px;
+    position: absolute;
+    z-index: -1;
+    top: 1429px;
+}

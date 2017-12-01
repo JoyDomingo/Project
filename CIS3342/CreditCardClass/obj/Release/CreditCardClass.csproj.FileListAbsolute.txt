@@ -1,0 +1,7 @@
+G:\CIS3342\CIS3342\CreditCardClass\bin\Release\CreditCardClass.dll
+G:\CIS3342\CIS3342\CreditCardClass\bin\Release\CreditCardClass.pdb
+G:\CIS3342\CIS3342\CreditCardClass\bin\Release\Utilities.dll
+G:\CIS3342\CIS3342\CreditCardClass\bin\Release\Utilities.pdb
+G:\CIS3342\CIS3342\CreditCardClass\obj\Release\CreditCardClass.csprojResolveAssemblyReference.cache
+G:\CIS3342\CIS3342\CreditCardClass\obj\Release\CreditCardClass.dll
+G:\CIS3342\CIS3342\CreditCardClass\obj\Release\CreditCardClass.pdb

@@ -1,0 +1,38 @@
+﻿body {
+    margin: 0;
+}
+
+#btnAddCreditCard{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#btnSeeAllTransactions{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#btnMakeAPurchase{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#btnMakeAPayment{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#credit{
+    margin-left: 50%;
+    margin-right: auto;
+}
+
+#menu{
+    margin-left: 26%;
+    margin-right: auto;
+}
+
+#title{
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\bin\Debug\CarLibrary.dll
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\bin\Debug\CarLibrary.pdb
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\obj\Debug\CarLibrary.dll
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\obj\Debug\CarLibrary.pdb
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\bin\Debug\Utilities.dll
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\bin\Debug\Utilities.pdb
+C:\Users\joydo\Desktop\CIS3342\CarLibrary\obj\Debug\CarLibrary.csprojResolveAssemblyReference.cache
+G:\CIS3342\CIS3342\CarLibrary\bin\Debug\CarLibrary.dll
+G:\CIS3342\CIS3342\CarLibrary\bin\Debug\CarLibrary.pdb
+G:\CIS3342\CIS3342\CarLibrary\bin\Debug\Utilities.dll
+G:\CIS3342\CIS3342\CarLibrary\bin\Debug\Utilities.pdb
+G:\CIS3342\CIS3342\CarLibrary\obj\Debug\CarLibrary.csprojResolveAssemblyReference.cache
+G:\CIS3342\CIS3342\CarLibrary\obj\Debug\CarLibrary.dll
+G:\CIS3342\CIS3342\CarLibrary\obj\Debug\CarLibrary.pdb

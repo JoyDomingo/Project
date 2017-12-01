@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddCreditCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="credit" type="tns:CreditCardObjects" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditCardObjects">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amountOwed" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="availamountBalance" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="cardNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="last" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="code" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddCreditCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddCreditCardResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountByNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cardNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccountByNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccountByNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCreditCardInfor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="credit" type="tns:CreditCardObjects" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCreditCardInforResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCreditCardInforResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewTransactions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="credit" type="tns:CreditCardTransactions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditCardTransactions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cardNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="pPrice" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="cardDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditZipCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCity" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewTransactionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewTransactionsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompareCardTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="credit" type="tns:CreditCardObjects" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompareCardTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompareCardTransactionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddCreditCardSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="AddCreditCardSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccountByNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccountByNumber" />
+  </wsdl:message>
+  <wsdl:message name="getAccountByNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccountByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCreditCardInforSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCreditCardInfor" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCreditCardInforSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCreditCardInforResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewTransactionsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewTransactions" />
+  </wsdl:message>
+  <wsdl:message name="AddNewTransactionsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompareCardTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:CompareCardTransaction" />
+  </wsdl:message>
+  <wsdl:message name="CompareCardTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:CompareCardTransactionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CreditCardSoap">
+    <wsdl:operation name="AddCreditCard">
+      <wsdl:input message="tns:AddCreditCardSoapIn" />
+      <wsdl:output message="tns:AddCreditCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountByNumber">
+      <wsdl:input message="tns:getAccountByNumberSoapIn" />
+      <wsdl:output message="tns:getAccountByNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCreditCardInfor">
+      <wsdl:input message="tns:UpdateCreditCardInforSoapIn" />
+      <wsdl:output message="tns:UpdateCreditCardInforSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewTransactions">
+      <wsdl:input message="tns:AddNewTransactionsSoapIn" />
+      <wsdl:output message="tns:AddNewTransactionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompareCardTransaction">
+      <wsdl:input message="tns:CompareCardTransactionSoapIn" />
+      <wsdl:output message="tns:CompareCardTransactionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CreditCardSoap" type="tns:CreditCardSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddCreditCard">
+      <soap:operation soapAction="http://tempuri.org/AddCreditCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountByNumber">
+      <soap:operation soapAction="http://tempuri.org/getAccountByNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCreditCardInfor">
+      <soap:operation soapAction="http://tempuri.org/UpdateCreditCardInfor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewTransactions">
+      <soap:operation soapAction="http://tempuri.org/AddNewTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompareCardTransaction">
+      <soap:operation soapAction="http://tempuri.org/CompareCardTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CreditCardSoap12" type="tns:CreditCardSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/AddCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountByNumber">
+      <soap12:operation soapAction="http://tempuri.org/getAccountByNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCreditCardInfor">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCreditCardInfor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewTransactions">
+      <soap12:operation soapAction="http://tempuri.org/AddNewTransactions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompareCardTransaction">
+      <soap12:operation soapAction="http://tempuri.org/CompareCardTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CreditCard">
+    <wsdl:port name="CreditCardSoap" binding="tns:CreditCardSoap">
+      <soap:address location="http://cis-iis2.temple.edu/Fall2017/CIS3342_tuf34427/Project4WS/CreditCard.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CreditCardSoap12" binding="tns:CreditCardSoap12">
+      <soap12:address location="http://cis-iis2.temple.edu/Fall2017/CIS3342_tuf34427/Project4WS/CreditCard.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #Select1 {
+            width: 123px;
+        }
+
+        #SlcSize {
+            width: 202px;
+        }
+
+        #Toasted {
+            width: 52px;
+        }
+
+        .auto-style1 {
+            height: 182px;
+        }
+
+        .auto-style2 {
+            height: 183px;
+        }
+
+        .auto-style3 {
+            height: 196px;
+        }
+
+        .auto-style4 {
+            height: 214px;
+        }
+        
+
+    </style>
+    <link rel="stylesheet" href="SandwichStyleSheet.css">
+</head>
+<body>
+
+    <FORM id="frmSandwichBuilder" method="post" action="Test1.aspx">
+        <p>
+            Welcome to Joy's Sandwich Maker
+        </p>
+        <p>
+            Enter Your Name:  <input id="custName" name="name" type="text" required = "required" />
+        </p>
+        <p>
+            Enter Your Phone Number:
+            <input id="custNum" name="number" type="text" required = "required"/>
+        </p>
+        <p>
+            Now Lets Build a Sandwich!
+        </p>
+        <div style="height: 71px">
+            <p>
+                How big do you want your sandwich?
+
+            </p>
+            <p>
+                <select id="SlcSize" name="size">
+                    <option value="Small">Small (4" - $5.00)</option>
+                    <option value="Medium">Medium(6" - $8.00)</option>
+                    <option value="Large">Large(12" - $10.00)</option>
+                </select>
+            </p>
+        </div>
+        <div style="height: 138px">
+
+            What Type Of Bread Would You Like?<br />
+            <select id="SlcBread" name="Bread">
+                <option value="Wheat">Wheat</option>
+                <option value="Italian">Italian</option>
+            </select><br />
+            <br />
+            Would you like it Toasted?<br />
+            <br />
+            <select id="Toasted" name="Toasted">
+                <option value="Toasted">Yes</option>
+                <option value="Toasted">No</option>
+            </select>
+        </div>
+        <div class="auto-style1">
+            What kind of meat?<br />
+            <input id="CkbTurkey" name="Meat" type="radio" value="Turkey" required ="required"/>Turkey<br />
+            <input id="CkbRoastBeef" name="Meat" type="radio" value="Roast Beef" />Roast Beef<br />
+            <input id="CkbHam" name="Meat" type="radio" value="Ham" />Ham<br />
+            <input id="CkbBacon" name="Meat" type="radio" value="Bacon" />Bacon (+ $1.00)<br />
+            <input id="CkbPastrami" name="Meat" type="radio" value="Pastrami" />Pastrami (+$1.00)<br />
+            <input id="CkbSalami" name="Meat" type="radio" value="Salami" />Salami ($1.00)<br />
+            <input id="CkbNone" name="Meat" type="radio" value="None" />None
+        </div>
+        <div style="height: 140px">
+            What kind of Cheese?<br />
+            <input id="CkbAmerican" name="Cheese" type="radio" value="American" />American<br />
+            <input id="CkbSwiss" name="Cheese" type="radio" value="Swiss" />Swiss<br />
+            <input id="CkbProvolone" name="Cheese" type="radio" value="Provolone" />Provolone<br />
+            <input id="CkbMozzarella" name="Cheese" type="radio" value="Mozzarella" />Mozzarella<br />
+            <input id="CkbPepperjack" name="Cheese" type="radio" value="Pepperjack" />Pepperjack (+ $0.50)<br />
+        </div>
+        <div style="height: 160px">
+            What Toppings do you want?<br />
+            <input id="RadioLettuce" name="Veggie" type="checkbox" value="Lettuce" />Lettuce<br />
+            <input id="RadioTomato" name="Veggie" type="checkbox" value="Tomato" />Tomato<br />
+            <input id="RadioOnion" name="Veggie" type="checkbox" value="Onion" />Onion<br />
+            <input id="RadioPickles" name="Veggie" type="checkbox" value="Pickles" />Pickles<br />
+            <input id="RadioBellPeppers" name="Veggie" type="checkbox" value="Bell Peppers" />Bell Peppers<br />
+            <input id="RadioSpinach" name="Veggie" type="checkbox" value="Spinach" />Spinach<br />
+        </div>
+        <div class="auto-style2">
+            What kind of sauces do you want?<br />
+            <input id="RadioMayo" name="Sauce" type="checkbox" value="Mayo" />Mayo<br />
+            <input id="RadioKetchup" name="Sauce" type="checkbox" value="Ketchup" />Ketchup<br />
+            <input id="RadioMustard" name="Sauce" type="checkbox" value="Mustard" />Mustard<br />
+            <input id="RadioChipotle" name="Sauce" type="checkbox" value="Chipotle" />Chipotle<br />
+            <input id="RadioRanch" name="Sauce" type="checkbox" value="Ranch" />Ranch<br />
+            <input id="RadioSriracha" name="Sauce" type="checkbox" value="Sriracha" />Sriracha<br />
+            <input id="RadioBarbeque" name="Sauce" type="checkbox" value="Barbeque" />Barbeque
+        </div>
+        <div style="height: 134px">
+            Extras ($0.50 each)<br />
+            <input id="CheckAvocado" name="ExtraA" type="checkbox" value="Avocado" />Avocado<br />
+            <input id="CheckExtraMeat" name="ExtraM" type="checkbox" value="ExtraMeat" />Extra Meat<br />
+            <input id="CheckExtraCheese" name="ExtraC" type="checkbox" value="ExtraCheese" />Extra Cheese<br />
+            <input id="CheckExtraSauce" name="ExtraS" type="checkbox" value="ExtraSauce" />Extra Sauce<br />
+            <input id="CheckGuacomole" name="ExtraG" type="checkbox" value="Guacamole" />Guacamole<br />
+        </div>
+        <div class="auto-style4">
+            Make it into a meal for additional $5.00 by picking one from each:<br />
+
+            Drink<br />
+            <input id="RadioCoke" name="drink" type="radio" value="Coke" />Coke<br />
+            <input id="RadioWater" name="drink" type="radio" value="Water" />Water<br />
+            <input id="RadioJuice" name="drink" type="radio" value="Juice" />Juice<br />
+            Snack<br />
+            <input id="RadioChips" name="snack" type="radio" value="Chips" />Plain Potato Chips<br />
+            <input id="RadioCookies" name="snack" type="radio" value="Cookies" />Chocolate Chip Cookies<br />
+            <input id="RadioFruitCup" name="snack" type="radio" value="Fruit" />Fruit Cup
+        </div>
+        <div class="auto-style3">
+            Thank you for Ordering at Joy's Sandwich!
+            <br />
+            <br />
+            Leave your Sandwich Builder a Tip!(Enter 0 for no tip) <input id="Text3" name="Tip" type="text" /><br />
+            <input id="Submit1" type="submit" value="Submit Order" />
+        </div>
+        
+    </FORM>
+    <footer id ="border"><img src="https://clipartion.com/wp-content/uploads/2015/11/fruit-salad-border-clipart.jpg" alt="veggie" /> </footer>
+    
+</body>
+</html>
