@@ -49,31 +49,13 @@ namespace Project {
         protected global::System.Web.UI.WebControls.Button btnLogout;
         
         /// <summary>
-        /// lblCourse1 control.
+        /// gvCourses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCourse1;
-        
-        /// <summary>
-        /// lblCourse2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCourse2;
-        
-        /// <summary>
-        /// lblCourse3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCourse3;
+        protected global::System.Web.UI.WebControls.GridView gvCourses;
         
         /// <summary>
         /// lblCourseGrade1 control.
